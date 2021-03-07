@@ -1,0 +1,25 @@
+.feature {
+  height: 100vh;
+  box-sizing: border-box;
+
+  &-content {
+    height: 100vh;
+    box-sizing: border-box;
+    flex-basis: content;
+    div {
+      width: 40%;
+      background-color: $main-blue;
+      padding: 2rem;
+      margin: 2rem;
+      div {
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    // @include media-breakpoint-down(md) {
+    //   flex-direction: column;
+    // }
+  }
+}

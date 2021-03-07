@@ -1,0 +1,20 @@
+.navbar {
+  background-color: white;
+
+  &-brand {
+    line-height: 1;
+    span {
+      color: $main-blue;
+    }
+  }
+
+  &-nav {
+    .nav-link {
+      color: black;
+
+      &:hover {
+        @include hover(null, black, true);
+      }
+    }
+  }
+}

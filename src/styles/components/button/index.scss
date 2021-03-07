@@ -1,0 +1,23 @@
+.btn {
+  &__blue {
+    background-color: $main-blue;
+    color: white;
+
+    &:hover {
+      @include hover(darken($main-blue, 10%), white);
+    }
+  }
+
+  &__white {
+    background-color: white;
+
+    &:hover {
+      @include hover(darken(white, 10%), black);
+    }
+  }
+
+  &__search {
+    height: 80%;
+    width: 10%;
+  }
+}

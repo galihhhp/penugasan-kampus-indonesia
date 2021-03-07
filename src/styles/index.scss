@@ -1,0 +1,17 @@
+@import "variables";
+@import "bootstrap";
+@import "fonts";
+@import "mixins";
+@import "global";
+
+@import "./components/navbar";
+@import "./components/button";
+@import "./components/search";
+@import "./components/input";
+@import "./components/hero-card";
+@import "./components/hero";
+@import "./components/recommendation";
+@import "./components/campus-card";
+@import "./components/feature";
+@import "./components/feature-card";
+@import "./components/job-vacancy";

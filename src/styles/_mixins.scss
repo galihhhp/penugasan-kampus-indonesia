@@ -1,0 +1,10 @@
+@mixin hover($bg-color, $text-color, $border-bottom: false) {
+  font-weight: bold;
+  background-color: $bg-color;
+  color: $text-color;
+  transition: ease-in 0.3s;
+
+  @if $border-bottom {
+    border-bottom: 4px solid $main-blue;
+  }
+}
