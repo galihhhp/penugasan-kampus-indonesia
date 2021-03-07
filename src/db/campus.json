@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "logo": "https://upload.wikimedia.org/wikipedia/id/9/95/Makara_UI.png",
+    "name": "Universitas Indonesia",
+    "accreditation": "Akreditasi A",
+    "type": "PTN",
+    "location": "Depok, Indonesia"
+  },
+  {
+    "id": 2,
+    "logo": "https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png",
+    "name": "Institut Teknologi Bandung",
+    "accreditation": "Akreditasi A",
+    "type": "PTN",
+    "location": "Bandung, Indonesia"
+  },
+  {
+    "id": 3,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Logo_Universitas_Brawijaya.svg",
+    "name": "Universitas Brawijaya",
+    "accreditation": "Akreditasi A",
+    "type": "PTN",
+    "location": "Malang, Indonesia"
+  },
+  {
+    "id": 4,
+    "logo": "https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-300x300.png",
+    "name": "Institut Teknologi Sepuluh Nopember",
+    "accreditation": "Akreditasi A",
+    "type": "PTN",
+    "location": "Surabaya, Indonesia"
+  },
+  {
+    "id": 5,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Telkom_Indonesia_2013.svg",
+    "name": "Telkom University",
+    "accreditation": "Akreditasi A",
+    "type": "PTS",
+    "location": "Bandung, Indonesia"
+  },
+  {
+    "id": 6,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Telkom_Indonesia_2013.svg",
+    "name": "Telkom University",
+    "accreditation": "Akreditasi A",
+    "type": "PTS",
+    "location": "Bandung, Indonesia"
+  }
+]

@@ -10,6 +10,14 @@
   @include media-breakpoint-down(md) {
     flex-direction: column;
   }
+
+  p {
+    font-size: 1.5rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
+  }
 }
 
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";

@@ -1,7 +1,15 @@
 .campus-card {
-  border: 3px solid $main-blue;
   width: 15rem;
-  height: 19rem;
+  height: 20rem;
+
+  &--white {
+    border: 3px solid white;
+    color: white;
+  }
+
+  &--blue {
+    border: 3px solid $main-blue;
+  }
 
   @include media-breakpoint-down(md) {
     height: 10rem;
@@ -9,6 +17,9 @@
 
   &__img {
     img {
+      width: 100px;
+      height: 100px;
+
       @include media-breakpoint-down(md) {
         display: none;
       }
@@ -19,6 +30,30 @@
     p {
       @include media-breakpoint-down(md) {
         margin: 0;
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1.3rem;
+
+    &--white {
+      background-color: white;
+      color: black;
+
+      &:hover {
+        @include hover(darken(white, 10%), black);
+      }
+    }
+
+    &--blue {
+      background-color: $main-blue;
+      color: white;
+
+      &:hover {
+        @include hover(darken($main-blue, 10%), white);
       }
     }
   }

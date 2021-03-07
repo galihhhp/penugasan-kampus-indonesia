@@ -1,18 +1,34 @@
-import { Button } from "components";
+import classNames from "classnames";
 
-const CampusCard = () => {
+const CampusCard = ({ className, blue, white, campus }) => {
+  const { name, logo, type, accreditation, location } = campus;
+
   return (
-    <div className="m-3 d-flex flex-column justify-content-center align-items-center campus-card">
-      <div className="d-flex campus-card__img">
-        <img src="https://placeimg.com/100/100/any" alt="cap" />
+    <div
+      className={classNames(
+        "m-3 d-flex flex-column justify-content-center align-items-center campus-card",
+        { "campus-card--white": white },
+        { "campus-card--blue": blue },
+        className
+      )}>
+      <div className="d-flex mb-3 campus-card__img">
+        <img src={logo} alt="cap" />
       </div>
       <div className="d-flex flex-column justify-content-center align-items-center campus-card__text">
-        <p>Kampus</p>
-        <p>Akreditas</p>
-        <p>PTN</p>
-        <p>Malang, Indonesia</p>
+        <p className="text-center">{name}</p>
+        <p>{accreditation}</p>
+        <p>{type}</p>
+        <p>{location}</p>
       </div>
-      <Button label="Lihat detail" blue size="lg" block />
+      <p
+        className={classNames(
+          "d-flex text-center m-0 justify-content-center align-items-center w-100 m-0 campus-card__button",
+          { "campus-card__button--white": white },
+          { "campus-card__button--blue": blue },
+          className
+        )}>
+        Lihat detail
+      </p>
     </div>
   );
 };
