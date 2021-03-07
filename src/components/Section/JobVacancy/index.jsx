@@ -7,8 +7,8 @@ const JobVacancy = () => {
         <div className="d-flex justify-content-center align-items-center">
           <img src="https://placeimg.com/200/200/any" alt="cap" />
         </div>
-        <div className="d-flex flex-column job-vacancy--right">
-          <p className="job-vacancy--right__main">
+        <div className="d-flex ml-3 flex-column job-vacancy--right">
+          <p className="m-0 job-vacancy--right__main">
             Kamu sedang mencari pekerjaan?
           </p>
           <p className="job-vacancy--right__sub">

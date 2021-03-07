@@ -1,3 +1,25 @@
 .campus-card {
   border: 3px solid $main-blue;
+  width: 15rem;
+  height: 19rem;
+
+  @include media-breakpoint-down(md) {
+    height: 10rem;
+  }
+
+  &__img {
+    img {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    p {
+      @include media-breakpoint-down(md) {
+        margin: 0;
+      }
+    }
+  }
 }

@@ -1,3 +1,16 @@
 .recommendation {
   height: 100vh;
+
+  &-title {
+    height: 10%;
+  }
+
+  &-content {
+    height: 60%;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+  }
 }

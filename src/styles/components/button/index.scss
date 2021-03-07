@@ -19,5 +19,9 @@
   &__search {
     height: 80%;
     width: 10%;
+    @include media-breakpoint-down(md) {
+      width: 30%;
+      margin-top: 1.5rem;
+    }
   }
 }

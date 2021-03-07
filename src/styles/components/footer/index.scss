@@ -1,0 +1,25 @@
+.footer {
+  background-color: darken($main-blue, 30%);
+
+  &-content {
+    height: 50vh;
+
+    h1 {
+      @include media-breakpoint-down(md) {
+        font-size: 2rem;
+      }
+    }
+
+    h3 {
+      @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      @include media-breakpoint-down(md) {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

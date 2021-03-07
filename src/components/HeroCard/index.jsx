@@ -3,7 +3,7 @@ const HeroCard = () => {
     <div className="d-flex text-white p-4 hero-card">
       <div className="d-flex mr-4 hero-card--left">
         <img src="https://placeimg.com/100/100/people" alt="ha" />
-        <div className="d-flex ml-2 flex-column">
+        <div className="d-flex ml-2 flex-column hero-card--left">
           <h1>1042</h1>
           <p>
             Jumlah kampus yang <br /> terdata saat ini

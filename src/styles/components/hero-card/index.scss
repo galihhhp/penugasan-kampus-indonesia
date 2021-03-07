@@ -1,4 +1,36 @@
 .hero-card {
   background-color: $main-blue;
   margin-top: 10rem;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 5rem;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  &--right {
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      text-align: center;
+    }
+
+    img {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  &--left {
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      text-align: center;
+    }
+
+    img {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
 }

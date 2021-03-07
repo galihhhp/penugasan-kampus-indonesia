@@ -1,3 +1,7 @@
 .search {
   width: 100%;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
 }

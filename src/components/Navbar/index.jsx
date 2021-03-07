@@ -42,11 +42,12 @@ const Navbar = () => {
                 Blog
               </a>
             </li>
+            <Button label="Masuk" mr white />
           </ul>
 
           <div>
-            <Button label="Masuk" mr white />
-            <Button label="Daftar" blue />
+            <Button label="Masuk" size="lg" mr white />
+            <Button label="Daftar" size="lg" blue />
           </div>
         </div>
       </nav>

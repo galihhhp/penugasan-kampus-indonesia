@@ -1,6 +1,15 @@
 .feature-card {
-  background-color: $main-blue;
-  height: 30%;
-  width: 10rem;
-  box-sizing: border-box;
+  background-color: darken($main-blue, 30%);
+  height: 8rem;
+  cursor: pointer;
+
+  &:hover {
+    @include hover($main-blue, white);
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
 }
+
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";

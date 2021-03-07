@@ -9,6 +9,7 @@ import Hero from "./Section/Hero";
 import Recommendation from "./Section/Recommendation";
 import Feature from "./Section/Feature";
 import JobVacancy from "./Section/JobVacancy";
+import Footer from "./Section/Footer";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Feature,
   FeatureCard,
   JobVacancy,
+  Footer,
 };
