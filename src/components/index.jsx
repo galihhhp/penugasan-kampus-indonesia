@@ -7,6 +7,10 @@ import CampusCard from "./CampusCard";
 import Login from "./Login";
 import FeatureCard from "./FeatureCard";
 import Modal from "./Modal";
+import CampusCardDetail from "./CampusCardDetail";
+import Poster from "./Poster";
+import SeminarCard from "./SeminarCard";
+import SeminarForm from "./SeminarForm";
 import Registration from "./Registration";
 import Hero from "./Section/Hero";
 import Recommendation from "./Section/Recommendation";
@@ -19,15 +23,19 @@ export {
   Button,
   Hero,
   Login,
+  SeminarForm,
   Search,
   Input,
   Registration,
   HeroCard,
+  Poster,
   Recommendation,
   CampusCard,
+  CampusCardDetail,
   Modal,
   Feature,
   FeatureCard,
+  SeminarCard,
   JobVacancy,
   Footer,
 };

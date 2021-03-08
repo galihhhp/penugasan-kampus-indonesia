@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "judul": "Front End Web Developer 101",
+    "poster": "https://jadwalevent.web.id/wp-content/uploads/2020/12/202012-ITDE-Poster.jpg",
+    "waktu": "20 Maret 2021, Pukul 16.00 WIB",
+    "pembicara": "Alamanda Shantika",
+    "biaya": "Gratis",
+    "status": "Tersedia"
+  },
+  {
+    "id": 2,
+    "judul": "Back End Web Developer 101",
+    "poster": "https://jadwalevent.web.id/wp-content/uploads/2020/12/202012-ITDE-Poster.jpg",
+    "waktu": "22 Maret 2021, Pukul 19.00 WIB",
+    "pembicara": "Alamanda Shantika",
+    "biaya": "Rp. 50.000",
+    "status": "Tersedia"
+  },
+  {
+    "id": 3,
+    "judul": "DevOps 101",
+    "poster": "https://jadwalevent.web.id/wp-content/uploads/2020/12/202012-ITDE-Poster.jpg",
+    "waktu": "20 Maret 2021, Pukul 16.00 WIB",
+    "pembicara": "Alamanda Shantika",
+    "biaya": "Gratis",
+    "status": "Tersedia"
+  },
+  {
+    "id": 4,
+    "judul": "Blockchain Engineer 101",
+    "poster": "https://jadwalevent.web.id/wp-content/uploads/2020/12/202012-ITDE-Poster.jpg",
+    "waktu": "29 Maret 2021, Pukul 16.00 WIB",
+    "pembicara": "Alamanda Shantika",
+    "biaya": "Gratis",
+    "status": "Tersedia"
+  },
+  {
+    "id": 5,
+    "judul": "Data Engineer 101",
+    "poster": "https://jadwalevent.web.id/wp-content/uploads/2020/12/202012-ITDE-Poster.jpg",
+    "waktu": "3 April 2021, Pukul 16.00 WIB",
+    "pembicara": "Alamanda Shantika",
+    "biaya": "Gratis",
+    "status": "Tersedia"
+  },
+  {
+    "id": 6,
+    "judul": "React Developer 101",
+    "poster": "https://jadwalevent.web.id/wp-content/uploads/2020/12/202012-ITDE-Poster.jpg",
+    "waktu": "7 April 2021, Pukul 19.00 WIB",
+    "pembicara": "Alamanda Shantika",
+    "biaya": "Rp. 150.000",
+    "status": "Tersedia"
+  }
+]

@@ -20,26 +20,31 @@ const Registration = () => {
 
   return (
     <div className="d-flex flex-column">
-      <h3 className="ml-2 text-center">Daftar</h3>
+      <h3 className="ml-2 text-center m-0">Daftar</h3>
       <Input
         name="email"
-        label="Password"
+        label="Email"
         type="email"
         onChange={handleChange}
+        placeholder="Masukkan email"
       />
       <Input
         name="password"
-        label="Password"
+        label="Kata sandi"
         type="password"
+        placeholder="Masukkan kata sandi"
         onChange={handleChange}
       />
       <Input
         name="confirmPassword"
-        type="confirmPassword"
-        label="Password"
+        type="password"
+        placeholder="Masukkan konfirmasi kata sandi"
+        label="Konfirmasi kata sandi"
         onChange={handleChange}
       />
-      <Button label="Daftar" blue onClick={handleRegistration} />
+      <div className="mt-3">
+        <Button label="Daftar" blue block onClick={handleRegistration} />
+      </div>
     </div>
   );
 };

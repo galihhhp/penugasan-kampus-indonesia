@@ -1,5 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Homepage, RecommendationPage } from "pages";
+import {
+  Homepage,
+  RecommendationPage,
+  JobVacancy,
+  SeminarWorkshop,
+} from "pages";
 
 export const ROUTES = {
   HOMEPAGE: "/",
@@ -25,6 +30,8 @@ export const Routes = () => {
       <Switch>
         <Route path={HOMEPAGE} component={Homepage} exact />
         <Route path={RECOMMENDATION} component={RecommendationPage} exact />
+        <Route path={JOB_VACANCY} component={JobVacancy} exact />
+        <Route path={SEMINAR_WORKSHOP} component={SeminarWorkshop} exact />
       </Switch>
     </Router>
   );

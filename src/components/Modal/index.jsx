@@ -1,17 +1,23 @@
-import { Registration, Login } from "components";
+import {
+  Registration,
+  Login,
+  CampusCardDetail,
+  Poster,
+  SeminarForm,
+} from "components";
 
-const Modal = ({ type }) => {
+const Modal = ({ type, data }) => {
   return (
     <div
       className="modal fade"
-      id="exampleModalCenter"
+      id="ModalCenter"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
+      aria-labelledby="ModalCenterTitle"
       aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered" role="document">
         <div className="modal-content">
-          <div className="modal-header">
+          <div className="modal-body">
             <button
               type="button"
               className="close"
@@ -19,10 +25,11 @@ const Modal = ({ type }) => {
               aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div className="modal-body">
             {type === "login" && <Login />}
             {type === "registration" && <Registration />}
+            {type === "campusDetail" && <CampusCardDetail data={data} />}
+            {type === "poster" && <Poster data={data} />}
+            {type === "seminar" && <SeminarForm />}
           </div>
         </div>
       </div>

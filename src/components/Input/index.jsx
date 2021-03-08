@@ -20,6 +20,7 @@ const Input = ({
         onChange={onChange}
         value={value}
         placeholder={placeholder}
+        required
       />
     </>
   );

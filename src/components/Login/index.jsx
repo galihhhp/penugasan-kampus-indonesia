@@ -19,20 +19,24 @@ const Login = () => {
 
   return (
     <div className="d-flex flex-column">
-      <h3 className="ml-2 text-center">Masuk</h3>
+      <h3 className="ml-2 text-center m-0">Masuk</h3>
       <Input
         name="email"
-        label="Password"
+        label="Email"
         type="email"
         onChange={handleChange}
+        placeholder="Masukkan email"
       />
       <Input
         name="password"
-        label="Password"
+        label="Kata sandi"
         type="password"
+        placeholder="Masukkan kata sandi"
         onChange={handleChange}
       />
-      <Button label="Masuk" blue onClick={handleLogin} />
+      <div className="mt-3">
+        <Button label="Masuk" blue block onClick={handleLogin} />
+      </div>
     </div>
   );
 };

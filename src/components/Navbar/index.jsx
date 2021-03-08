@@ -1,6 +1,6 @@
-import { Modal } from "components";
-import { Button } from "components";
+import { Button, Modal } from "components";
 import { useState } from "react";
+import { ROUTES } from "configs/routes";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,11 +23,9 @@ const Navbar = () => {
           aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a
-          className="navbar-brand font-weight-bold d-flex flex-column"
-          href="google.com">
+        <p className="navbar-brand font-weight-bold d-flex flex-column">
           Kampus <span className="ml-3">Indonesia</span>
-        </a>
+        </p>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto ml-5 mt-2 mt-lg-0">
@@ -58,7 +56,7 @@ const Navbar = () => {
               label="Masuk"
               size="lg"
               dataToggle="modal"
-              dataTarget="#exampleModalCenter"
+              dataTarget="#ModalCenter"
               mr
               white
               onClick={() => {
@@ -71,7 +69,7 @@ const Navbar = () => {
               label="Daftar"
               size="lg"
               dataToggle="modal"
-              dataTarget="#exampleModalCenter"
+              dataTarget="#ModalCenter"
               blue
               onClick={() => {
                 setIsModalOpen(true);

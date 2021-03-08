@@ -2,7 +2,15 @@
   background-color: darken($main-blue, 30%);
 
   &-content {
-    height: 50vh;
+    min-height: 50vh;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
 
     h1 {
       @include media-breakpoint-down(md) {

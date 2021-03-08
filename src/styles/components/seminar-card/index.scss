@@ -1,0 +1,23 @@
+.seminar-card {
+  width: 20rem;
+  height: 16rem;
+  background-color: white;
+
+  &__poster__button {
+    background-color: darken(white, 20%);
+    cursor: pointer;
+
+    &:hover {
+      @include hover(darken(white, 30%), black);
+    }
+  }
+
+  &__daftar__button {
+    background-color: $main-blue;
+    cursor: pointer;
+
+    &:hover {
+      @include hover(darken($main-blue, 10%), black);
+    }
+  }
+}
