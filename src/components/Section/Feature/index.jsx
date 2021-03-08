@@ -23,7 +23,7 @@ const Feature = () => {
     <div className="item" data-value="2">
       <FeatureCard
         title="Beasiswa"
-        onClick={() => history.push(ROUTES.RECOMMENDATION)}
+        onClick={() => history.push(ROUTES.SCHOLARSHIP)}
       />
     </div>,
     <div className="item" data-value="3">
@@ -41,7 +41,7 @@ const Feature = () => {
     <div className="item" data-value="5">
       <FeatureCard
         title="Lomba"
-        onClick={() => history.push(ROUTES.RECOMMENDATION)}
+        onClick={() => history.push(ROUTES.COMPETITIONS)}
       />
     </div>,
     <div className="item" data-value="6">

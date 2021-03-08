@@ -4,6 +4,8 @@ import {
   RecommendationPage,
   JobVacancy,
   SeminarWorkshop,
+  Competition,
+  Scholarship,
 } from "pages";
 
 export const ROUTES = {
@@ -12,7 +14,7 @@ export const ROUTES = {
   JOB_VACANCY: "/lowongan-kerja",
   COMPETITIONS: "/lomba",
   SEMINAR_WORKSHOP: "/seminar-workshop",
-  BEASISWA: "/beasiswa",
+  SCHOLARSHIP: "/beasiswa",
 };
 
 export const Routes = () => {
@@ -22,7 +24,7 @@ export const Routes = () => {
     JOB_VACANCY,
     COMPETITIONS,
     SEMINAR_WORKSHOP,
-    BEASISWA,
+    SCHOLARSHIP,
   } = ROUTES;
 
   return (
@@ -32,6 +34,8 @@ export const Routes = () => {
         <Route path={RECOMMENDATION} component={RecommendationPage} exact />
         <Route path={JOB_VACANCY} component={JobVacancy} exact />
         <Route path={SEMINAR_WORKSHOP} component={SeminarWorkshop} exact />
+        <Route path={COMPETITIONS} component={Competition} exact />
+        <Route path={SCHOLARSHIP} component={Scholarship} exact />
       </Switch>
     </Router>
   );
