@@ -1,8 +1,17 @@
+import { Modal } from "components";
 import { Button } from "components";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [login, setLogin] = useState(false);
+  const [register, setRegister] = useState(false);
+  const [modalType, setModalType] = useState("");
+
   return (
     <>
+      {isModalOpen && register && <Modal type={modalType} />}
+      {isModalOpen && login && <Modal type={modalType} />}
       <nav className="navbar navbar-expand-lg navbar-light">
         <button
           className="navbar-toggler"
@@ -42,12 +51,34 @@ const Navbar = () => {
                 Blog
               </a>
             </li>
-            <Button label="Masuk" mr white />
           </ul>
 
           <div>
-            <Button label="Masuk" size="lg" mr white />
-            <Button label="Daftar" size="lg" blue />
+            <Button
+              label="Masuk"
+              size="lg"
+              dataToggle="modal"
+              dataTarget="#exampleModalCenter"
+              mr
+              white
+              onClick={() => {
+                setIsModalOpen(true);
+                setLogin(true);
+                setModalType("login");
+              }}
+            />
+            <Button
+              label="Daftar"
+              size="lg"
+              dataToggle="modal"
+              dataTarget="#exampleModalCenter"
+              blue
+              onClick={() => {
+                setIsModalOpen(true);
+                setRegister(true);
+                setModalType("registration");
+              }}
+            />
           </div>
         </div>
       </nav>

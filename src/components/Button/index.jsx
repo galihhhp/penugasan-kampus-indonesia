@@ -11,10 +11,14 @@ const Button = ({
   search,
   white,
   disabled,
+  dataToggle,
+  dataTarget,
   onClick,
 }) => {
   return (
     <button
+      data-toggle={dataToggle}
+      data-target={dataTarget}
       type="button"
       className={classNames(
         "btn",
