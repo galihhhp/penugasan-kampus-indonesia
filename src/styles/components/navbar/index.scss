@@ -2,6 +2,14 @@
   background-color: white;
   height: 5rem;
 
+  &-collapse {
+    background-color: white;
+
+    @include media-breakpoint-down(md) {
+      height: 250px;
+    }
+  }
+
   &-brand {
     line-height: 1;
     cursor: pointer;
@@ -18,6 +26,12 @@
       &:hover {
         @include hover(null, black, true);
       }
+    }
+  }
+
+  &-feature-dropdown {
+    @include media-breakpoint-up(md) {
+      margin-left: 220px;
     }
   }
 }

@@ -35,7 +35,6 @@ const Navbar = () => {
         <p className="navbar-brand font-weight-bold d-flex flex-column">
           Kampus <span className="ml-3">Indonesia</span>
         </p>
-
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto ml-5 mt-2 mt-lg-0">
             <li className="nav-item">
@@ -44,9 +43,21 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-dark mr-4" href="google.com">
+              <p
+                className="nav-link text-dark mr-4 dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
                 Fitur
-              </a>
+              </p>
+              <div class="dropdown-menu navbar-feature-dropdown">
+                <p class="dropdown-item">Kampus</p>
+                <p class="dropdown-item">Beasiswa</p>
+                <p class="dropdown-item">Lowongan Kerja</p>
+                <p class="dropdown-item">Seminar & Workshop</p>
+                <p class="dropdown-item">Lomba</p>
+                <p class="dropdown-item">UTBK</p>
+              </div>
             </li>
             <li className="nav-item">
               <a className="nav-link text-dark mr-4" href="google.com">
@@ -62,7 +73,18 @@ const Navbar = () => {
 
           <div>
             {currentUser ? (
-              <Button label="Keluar" size="lg" mr white onClick={userLogout} />
+              <div className="d-flex">
+                <p className="d-flex justify-content-center align-items-center mr-5">
+                  Keranjang <span className="font-weight-bold ml-3">4</span>
+                </p>
+                <Button
+                  label="Keluar"
+                  size="lg"
+                  mr
+                  white
+                  onClick={userLogout}
+                />
+              </div>
             ) : (
               <>
                 <Button
