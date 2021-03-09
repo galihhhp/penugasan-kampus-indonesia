@@ -1,12 +1,21 @@
 import { Button, Modal } from "components";
 import { useState } from "react";
-import { ROUTES } from "configs/routes";
+import { useAuth } from "Context/AuthContext";
 
 const Navbar = () => {
+  const { currentUser, logout } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [login, setLogin] = useState(false);
   const [register, setRegister] = useState(false);
   const [modalType, setModalType] = useState("");
+
+  const userLogout = async () => {
+    try {
+      await logout();
+    } catch (error) {
+      alert(error);
+    }
+  };
 
   return (
     <>
@@ -52,31 +61,37 @@ const Navbar = () => {
           </ul>
 
           <div>
-            <Button
-              label="Masuk"
-              size="lg"
-              dataToggle="modal"
-              dataTarget="#ModalCenter"
-              mr
-              white
-              onClick={() => {
-                setIsModalOpen(true);
-                setLogin(true);
-                setModalType("login");
-              }}
-            />
-            <Button
-              label="Daftar"
-              size="lg"
-              dataToggle="modal"
-              dataTarget="#ModalCenter"
-              blue
-              onClick={() => {
-                setIsModalOpen(true);
-                setRegister(true);
-                setModalType("registration");
-              }}
-            />
+            {currentUser ? (
+              <Button label="Keluar" size="lg" mr white onClick={userLogout} />
+            ) : (
+              <>
+                <Button
+                  label="Masuk"
+                  size="lg"
+                  dataToggle="modal"
+                  dataTarget="#ModalCenter"
+                  mr
+                  white
+                  onClick={() => {
+                    setIsModalOpen(true);
+                    setLogin(true);
+                    setModalType("login");
+                  }}
+                />
+                <Button
+                  label="Daftar"
+                  size="lg"
+                  dataToggle="modal"
+                  dataTarget="#ModalCenter"
+                  blue
+                  onClick={() => {
+                    setIsModalOpen(true);
+                    setRegister(true);
+                    setModalType("registration");
+                  }}
+                />
+              </>
+            )}
           </div>
         </div>
       </nav>

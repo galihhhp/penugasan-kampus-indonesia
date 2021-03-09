@@ -1,7 +1,10 @@
-import { Button, Input } from "components";
+import { Button, Input, Alert } from "components";
 import { useState } from "react";
+import { useAuth } from "Context/AuthContext";
 
 const Login = () => {
+  const { loginEmailPassword } = useAuth();
+  const [error, setError] = useState("");
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -9,8 +12,13 @@ const Login = () => {
 
   const { email, password } = input;
 
-  const handleLogin = () => {
-    console.log(email, password);
+  const handleLogin = async () => {
+    try {
+      await loginEmailPassword(email, password);
+      console.log(email, password);
+    } catch (error) {
+      setError(error);
+    }
   };
 
   const handleChange = (event) => {
@@ -20,6 +28,7 @@ const Login = () => {
   return (
     <div className="d-flex flex-column">
       <h3 className="ml-2 text-center m-0">Masuk</h3>
+      {error && <Alert type="danger" label={error} />}
       <Input
         name="email"
         label="Email"

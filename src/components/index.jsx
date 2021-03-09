@@ -12,6 +12,7 @@ import Poster from "./Poster";
 import SeminarCard from "./SeminarCard";
 import SeminarForm from "./SeminarForm";
 import Registration from "./Registration";
+import Alert from "./Alert";
 import Hero from "./Section/Hero";
 import Recommendation from "./Section/Recommendation";
 import Feature from "./Section/Feature";
@@ -24,6 +25,7 @@ export {
   Hero,
   Login,
   SeminarForm,
+  Alert,
   Search,
   Input,
   Registration,

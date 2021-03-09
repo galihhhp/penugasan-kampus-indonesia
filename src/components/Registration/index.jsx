@@ -1,7 +1,11 @@
-import { Button, Input } from "components";
+import { Button, Input, Alert } from "components";
 import { useState } from "react";
+import { useAuth } from "Context/AuthContext";
 
 const Registration = () => {
+  const { registerEmailPassword } = useAuth();
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -10,8 +14,18 @@ const Registration = () => {
 
   const { email, password, confirmPassword } = input;
 
-  const handleRegistration = () => {
-    console.log(email, password, confirmPassword);
+  const handleRegistration = async () => {
+    try {
+      if (password !== confirmPassword) {
+        throw new Error("Your password not match").toString();
+      }
+
+      await registerEmailPassword(email, password);
+      setSuccess("Successfully registered");
+      console.log(email, password, confirmPassword);
+    } catch (error) {
+      setError(error);
+    }
   };
 
   const handleChange = (event) => {
@@ -21,6 +35,8 @@ const Registration = () => {
   return (
     <div className="d-flex flex-column">
       <h3 className="ml-2 text-center m-0">Daftar</h3>
+      {error && <Alert type="danger" label={error} />}
+      {success && <Alert type="success" label={success} />}
       <Input
         name="email"
         label="Email"
