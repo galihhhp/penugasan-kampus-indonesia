@@ -1,0 +1,7 @@
+.cart-page {
+  background-color: darken($main-blue, 30%);
+
+  &-content {
+    min-height: 100vh;
+  }
+}

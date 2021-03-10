@@ -4,6 +4,7 @@ import JobVacancy from "./JobVacancy";
 import SeminarWorkshop from "./SeminarWorkshop";
 import Competition from "./Competition";
 import Scholarship from "./Scholarship";
+import Cart from "./Cart";
 
 export {
   Homepage,
@@ -12,4 +13,5 @@ export {
   SeminarWorkshop,
   Competition,
   Scholarship,
+  Cart,
 };

@@ -11,6 +11,7 @@ import CampusCardDetail from "./CampusCardDetail";
 import Poster from "./Poster";
 import SeminarCard from "./SeminarCard";
 import SeminarForm from "./SeminarForm";
+import CartCard from "./CartCard";
 import Registration from "./Registration";
 import Alert from "./Alert";
 import Hero from "./Section/Hero";
@@ -27,6 +28,7 @@ export {
   SeminarForm,
   Alert,
   Search,
+  CartCard,
   Input,
   Registration,
   HeroCard,

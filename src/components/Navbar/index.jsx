@@ -1,6 +1,8 @@
 import { Button, Modal } from "components";
 import { useState } from "react";
 import { useAuth } from "Context/AuthContext";
+import { useHistory } from "react-router-dom";
+import { ROUTES } from "configs/routes";
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
@@ -8,6 +10,8 @@ const Navbar = () => {
   const [login, setLogin] = useState(false);
   const [register, setRegister] = useState(false);
   const [modalType, setModalType] = useState("");
+
+  const history = useHistory();
 
   const userLogout = async () => {
     try {
@@ -74,9 +78,13 @@ const Navbar = () => {
           <div>
             {currentUser ? (
               <div className="d-flex">
-                <p className="d-flex justify-content-center align-items-center mr-5">
-                  Keranjang <span className="font-weight-bold ml-3">4</span>
-                </p>
+                <Button
+                  label="Keranjang"
+                  size="lg"
+                  mr
+                  blue
+                  onClick={() => history.push(ROUTES.CART)}
+                />
                 <Button
                   label="Keluar"
                   size="lg"

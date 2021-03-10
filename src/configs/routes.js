@@ -6,6 +6,7 @@ import {
   SeminarWorkshop,
   Competition,
   Scholarship,
+  Cart,
 } from "pages";
 
 export const ROUTES = {
@@ -15,6 +16,7 @@ export const ROUTES = {
   COMPETITIONS: "/lomba",
   SEMINAR_WORKSHOP: "/seminar-workshop",
   SCHOLARSHIP: "/beasiswa",
+  CART: "/keranjang",
 };
 
 export const Routes = () => {
@@ -25,6 +27,7 @@ export const Routes = () => {
     COMPETITIONS,
     SEMINAR_WORKSHOP,
     SCHOLARSHIP,
+    CART,
   } = ROUTES;
 
   return (
@@ -36,6 +39,7 @@ export const Routes = () => {
         <Route path={SEMINAR_WORKSHOP} component={SeminarWorkshop} exact />
         <Route path={COMPETITIONS} component={Competition} exact />
         <Route path={SCHOLARSHIP} component={Scholarship} exact />
+        <Route path={CART} component={Cart} exact />
       </Switch>
     </Router>
   );
