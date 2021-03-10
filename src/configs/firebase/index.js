@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/auth";
+import "firebase/database";
 
 require("dotenv").config();
 
@@ -13,6 +14,10 @@ const firebaseConfig = {
   // measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
-const auth = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-export default auth.auth();
+const auth = firebase.auth();
+const database = firebase.database();
+
+// export default auth.auth();
+export { auth, database };

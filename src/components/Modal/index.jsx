@@ -29,7 +29,7 @@ const Modal = ({ type, data }) => {
             {type === "registration" && <Registration />}
             {type === "campusDetail" && <CampusCardDetail data={data} />}
             {type === "poster" && <Poster data={data} />}
-            {type === "seminar" && <SeminarForm />}
+            {type === "seminar" && <SeminarForm data={data} />}
           </div>
         </div>
       </div>
