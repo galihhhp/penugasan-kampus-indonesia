@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useAuth } from "Context/AuthContext";
 
 const Login = () => {
-  const { loginEmailPassword } = useAuth();
+  const { loginEmailPassword, loginWithGoogle } = useAuth();
   const [error, setError] = useState("");
   const [input, setInput] = useState({
     email: "",
@@ -18,6 +18,14 @@ const Login = () => {
       console.log(email, password);
     } catch (error) {
       setError(error);
+    }
+  };
+
+  const handleGoogle = async () => {
+    try {
+      loginWithGoogle();
+    } catch (error) {
+      console.log(error);
     }
   };
 
@@ -45,6 +53,7 @@ const Login = () => {
       />
       <div className="mt-3">
         <Button label="Masuk" blue block onClick={handleLogin} />
+        <Button label="google" type="danger" block onClick={handleGoogle} />
       </div>
     </div>
   );

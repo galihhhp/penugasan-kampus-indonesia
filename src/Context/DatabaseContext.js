@@ -1,5 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { database } from "configs/firebase";
+import { useAuth } from "Context/AuthContext";
 
 const DatabaseContext = React.createContext();
 
@@ -7,6 +8,7 @@ export const useDatabase = () => useContext(DatabaseContext);
 
 export const DatabaseProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
+  const { currentUser } = useAuth();
 
   const addToCart = async ({
     name,
@@ -18,7 +20,7 @@ export const DatabaseProvider = ({ children }) => {
     userId,
   }) => {
     try {
-      database.ref("/" + userId + new Date().getTime()).set({
+      database.ref("/" + userId).set({
         name,
         email,
         phone,
@@ -31,8 +33,18 @@ export const DatabaseProvider = ({ children }) => {
     }
   };
 
+  const getData = () => {
+    const userId = currentUser.uid;
+    const cart = database.ref("/" + userId);
+    cart.on("value", (snapshot) => {
+      const data = snapshot.val();
+      console.log(data);
+    });
+  };
+
   const value = {
     addToCart,
+    getData,
   };
 
   return (

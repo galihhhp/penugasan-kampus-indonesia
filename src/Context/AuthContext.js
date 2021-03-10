@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import firebase from "firebase/app";
 import { auth } from "configs/firebase";
 
 const AuthContext = React.createContext();
@@ -59,6 +60,17 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   };
 
+  const loginWithGoogle = async () => {
+    try {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+      firebase.auth().signInWithPopup(provider);
+    } catch (error) {
+      const errorMessage = error.message;
+      throw new Error(errorMessage);
+    }
+  };
+
   const logout = async () => {
     try {
       auth.signOut();
@@ -77,6 +89,7 @@ export const AuthProvider = ({ children }) => {
     logout,
     currentUser,
     loginEmailPassword,
+    loginWithGoogle,
     registerEmailPassword,
   };
 
