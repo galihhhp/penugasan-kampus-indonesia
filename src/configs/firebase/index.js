@@ -11,7 +11,6 @@ const firebaseConfig = {
   storageBucket: process.env.REACT_APP_STORAGE,
   messagingSenderId: process.env.REACT_APP_MSG_SENDER_ID,
   appId: process.env.REACT_APP_APP_ID,
-  // measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -19,5 +18,4 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 
-// export default auth.auth();
 export { auth, database };

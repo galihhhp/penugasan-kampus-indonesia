@@ -1,5 +1,6 @@
 .input__search {
   width: 40%;
+
   @include media-breakpoint-down(md) {
     width: 80%;
   }

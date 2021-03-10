@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { database } from "configs/firebase";
 import { useAuth } from "Context/AuthContext";
 
@@ -7,7 +7,6 @@ const DatabaseContext = React.createContext();
 export const useDatabase = () => useContext(DatabaseContext);
 
 export const DatabaseProvider = ({ children }) => {
-  const [loading, setLoading] = useState(true);
   const { currentUser } = useAuth();
 
   const addToCart = async ({

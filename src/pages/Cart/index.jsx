@@ -2,11 +2,9 @@ import { useEffect } from "react";
 import { ROUTES } from "configs/routes";
 import { useHistory } from "react-router-dom";
 import { Button, CartCard } from "components";
-import { useDatabase } from "Context/DatabaseContext";
 
 const Cart = () => {
   const history = useHistory();
-  const { getData } = useDatabase();
 
   useEffect(() => (document.title = "Keranjang"));
 

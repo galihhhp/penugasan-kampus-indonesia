@@ -1,5 +1,5 @@
 const CampusCardDetail = ({ data }) => {
-  const { name, logo, type, accreditation, location } = data;
+  const { name, type, accreditation, location } = data;
 
   return (
     <div>

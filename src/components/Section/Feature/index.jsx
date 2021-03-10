@@ -2,7 +2,6 @@ import { FeatureCard } from "components";
 import AliceCarousel from "react-alice-carousel";
 import { useHistory } from "react-router-dom";
 import { ROUTES } from "configs/routes";
-import "react-alice-carousel/lib/alice-carousel.css";
 
 const Feature = () => {
   const history = useHistory();
