@@ -1,11 +1,12 @@
 import { Button } from "components";
+import jobVacancyIcon from "assets/job.png";
 
 const JobVacancy = () => {
   return (
     <div className="job-vacancy d-flex text-white">
       <div className="container d-flex justify-content-center align-items-center">
         <div className="d-flex justify-content-center align-items-center">
-          <img src="https://placeimg.com/200/200/any" alt="cap" />
+          <img src={jobVacancyIcon} alt="cap" />
         </div>
         <div className="d-flex ml-3 flex-column job-vacancy--right">
           <p className="m-0 job-vacancy--right__main">

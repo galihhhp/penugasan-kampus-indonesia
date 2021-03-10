@@ -2,6 +2,16 @@
   height: 50vh;
   background-color: $main-blue;
 
+  img {
+    width: 50%;
+    height: 50%;
+
+    @include media-breakpoint-down(md) {
+      width: 70%;
+      height: 70%;
+    }
+  }
+
   &--right {
     &__main {
       font-size: 2rem;

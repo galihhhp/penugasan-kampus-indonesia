@@ -15,6 +15,9 @@
     }
 
     img {
+      width: 100px;
+      height: 100px;
+
       @include media-breakpoint-down(md) {
         display: none;
       }
@@ -28,6 +31,9 @@
     }
 
     img {
+      width: 100px;
+      height: 100px;
+
       @include media-breakpoint-down(md) {
         display: none;
       }
