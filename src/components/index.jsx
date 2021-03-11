@@ -14,6 +14,7 @@ import SeminarForm from "./SeminarForm";
 import CartCard from "./CartCard";
 import Registration from "./Registration";
 import Alert from "./Alert";
+import Layout from "./Layout";
 import Hero from "./Section/Hero";
 import Recommendation from "./Section/Recommendation";
 import Feature from "./Section/Feature";
@@ -30,6 +31,7 @@ export {
   Alert,
   Search,
   CartCard,
+  Layout,
   Input,
   Registration,
   HeroCard,

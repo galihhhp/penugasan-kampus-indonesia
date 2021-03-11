@@ -1,4 +1,9 @@
+import { useHistory } from "react-router-dom";
+import { ROUTES } from "configs/routes";
+
 const Footer = () => {
+  const history = useHistory();
+
   return (
     <div className="footer">
       <div className="container d-flex pt-4 justify-content-around align-items-start text-white footer-content">
@@ -29,12 +34,16 @@ const Footer = () => {
         </div>
         <div className="w-100 footer-content--center">
           <h3>Fitur</h3>
-          <p>Cari Kampus/Prodi</p>
-          <p>Cari Seminar/Workshop</p>
-          <p>Cari Beasiswa</p>
-          <p>Cari Lomba</p>
-          <p>Cari Lowongan</p>
-          <p>UTBK</p>
+          <p onClick={() => history.push(ROUTES.RECOMMENDATION)}>
+            Cari Kampus/Prodi
+          </p>
+          <p onClick={() => history.push(ROUTES.SEMINAR_WORKSHOP)}>
+            Cari Seminar/Workshop
+          </p>
+          <p onClick={() => history.push(ROUTES.SCHOLARSHIP)}>Cari Beasiswa</p>
+          <p onClick={() => history.push(ROUTES.COMPETITIONS)}>Cari Lomba</p>
+          <p onClick={() => history.push(ROUTES.JOB_VACANCY)}>Cari Lowongan</p>
+          <p onClick={() => history.push(ROUTES.UTBK)}>UTBK</p>
         </div>
         <div className="w-100 footer-content--right">
           <h3>Lainnya</h3>

@@ -29,5 +29,16 @@
         font-size: 0.7rem;
       }
     }
+
+    &--center,
+    &--right {
+      p {
+        cursor: pointer;
+
+        &:hover {
+          @include hover(null, null);
+        }
+      }
+    }
   }
 }

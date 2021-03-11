@@ -36,15 +36,19 @@ const Navbar = () => {
           aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <p className="navbar-brand font-weight-bold d-flex flex-column">
+        <p
+          className="navbar-brand font-weight-bold d-flex flex-column"
+          onClick={() => history.push(ROUTES.HOMEPAGE)}>
           Kampus <span className="ml-3">Indonesia</span>
         </p>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto ml-5 mt-2 mt-lg-0">
             <li className="nav-item">
-              <a className="nav-link text-dark mr-4" href="google.com">
+              <p
+                className="nav-link text-dark mr-4"
+                onClick={() => history.push(ROUTES.HOMEPAGE)}>
                 Beranda
-              </a>
+              </p>
             </li>
             <li className="nav-item">
               <p
@@ -55,12 +59,36 @@ const Navbar = () => {
                 Fitur
               </p>
               <div class="dropdown-menu navbar-feature-dropdown">
-                <p class="dropdown-item">Kampus</p>
-                <p class="dropdown-item">Beasiswa</p>
-                <p class="dropdown-item">Lowongan Kerja</p>
-                <p class="dropdown-item">Seminar & Workshop</p>
-                <p class="dropdown-item">Lomba</p>
-                <p class="dropdown-item">UTBK</p>
+                <p
+                  class="dropdown-item"
+                  onClick={() => history.push(ROUTES.RECOMMENDATION)}>
+                  Kampus
+                </p>
+                <p
+                  class="dropdown-item"
+                  onClick={() => history.push(ROUTES.SCHOLARSHIP)}>
+                  Beasiswa
+                </p>
+                <p
+                  class="dropdown-item"
+                  onClick={() => history.push(ROUTES.JOB_VACANCY)}>
+                  Lowongan Kerja
+                </p>
+                <p
+                  class="dropdown-item"
+                  onClick={() => history.push(ROUTES.SEMINAR_WORKSHOP)}>
+                  Seminar & Workshop
+                </p>
+                <p
+                  class="dropdown-item"
+                  onClick={() => history.push(ROUTES.COMPETITIONS)}>
+                  Lomba
+                </p>
+                <p
+                  class="dropdown-item"
+                  onClick={() => history.push(ROUTES.UTBK)}>
+                  UTBK
+                </p>
               </div>
             </li>
             <li className="nav-item">

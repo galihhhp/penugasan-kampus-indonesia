@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import {
   Homepage,
   RecommendationPage,
@@ -33,17 +33,15 @@ export const Routes = () => {
   } = ROUTES;
 
   return (
-    <Router>
-      <Switch>
-        <Route path={HOMEPAGE} component={Homepage} exact />
-        <Route path={RECOMMENDATION} component={RecommendationPage} exact />
-        <Route path={JOB_VACANCY} component={JobVacancy} exact />
-        <Route path={SEMINAR_WORKSHOP} component={SeminarWorkshop} exact />
-        <Route path={COMPETITIONS} component={Competition} exact />
-        <Route path={SCHOLARSHIP} component={Scholarship} exact />
-        <Route path={CART} component={Cart} exact />
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
+    <Switch>
+      <Route path={HOMEPAGE} component={Homepage} exact />
+      <Route path={RECOMMENDATION} component={RecommendationPage} exact />
+      <Route path={JOB_VACANCY} component={JobVacancy} exact />
+      <Route path={SEMINAR_WORKSHOP} component={SeminarWorkshop} exact />
+      <Route path={COMPETITIONS} component={Competition} exact />
+      <Route path={SCHOLARSHIP} component={Scholarship} exact />
+      <Route path={CART} component={Cart} exact />
+      <Route component={NotFound} />
+    </Switch>
   );
 };

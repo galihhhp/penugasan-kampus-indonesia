@@ -1,12 +1,11 @@
 import { Routes } from "configs/routes";
-import { Navbar } from "components";
+import { Layout } from "components";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Routes />
-    </>
+    </Layout>
   );
 }
 

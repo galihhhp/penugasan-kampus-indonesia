@@ -1,12 +1,12 @@
 .newsletter {
-  height: 30vh;
+  min-height: 30vh;
   background-color: darken($main-blue, 30%);
 
   &-main {
     height: 30vh;
 
     @include media-breakpoint-down(md) {
-      min-height: 30vh;
+      min-height: 40vh;
     }
 
     h4 {
