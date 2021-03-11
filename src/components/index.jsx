@@ -18,6 +18,7 @@ import Hero from "./Section/Hero";
 import Recommendation from "./Section/Recommendation";
 import Feature from "./Section/Feature";
 import JobVacancy from "./Section/JobVacancy";
+import Newsletter from "./Section/Newsletter";
 import Footer from "./Section/Footer";
 
 export {
@@ -39,6 +40,7 @@ export {
   Modal,
   Feature,
   FeatureCard,
+  Newsletter,
   SeminarCard,
   JobVacancy,
   Footer,

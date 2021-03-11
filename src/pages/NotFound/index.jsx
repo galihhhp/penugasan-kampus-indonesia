@@ -1,7 +1,14 @@
 import notFound from "assets/404-error.png";
 import { Button } from "components";
+import { useEffect } from "react";
+import { ROUTES } from "configs/routes";
+import { useHistory } from "react-router-dom";
 
 const NotFound = () => {
+  const history = useHistory();
+
+  useEffect(() => (document.title = "404 - Halaman tidak dapat ditemukan"));
+
   return (
     <div className="d-flex flex-column justify-content-center align-items-center text-center not-found">
       <img src={notFound} alt="404 Illustration" />
@@ -15,7 +22,12 @@ const NotFound = () => {
       <p className="m-0 mb-3 not-found-sub">
         Kami akan segera memperbaiki masalah yang sedang terjadi
       </p>
-      <Button label="Homepage" size="lg" blue />
+      <Button
+        label="Homepage"
+        size="lg"
+        blue
+        onClick={() => history.push(ROUTES.HOMEPAGE)}
+      />
     </div>
   );
 };

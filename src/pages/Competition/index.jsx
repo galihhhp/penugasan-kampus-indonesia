@@ -22,7 +22,7 @@ const Competition = () => {
           <h1 className="col-8 text-white">Lomba</h1>
         </div>
         <div className="row justify-content-center align-items-center">
-          <h3 className="text-white">Belum tersedia</h3>
+          <h3 className="text-white">Saat ini belum ada lomba yang tersedia</h3>
         </div>
       </div>
     </div>

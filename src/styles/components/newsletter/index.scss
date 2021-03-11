@@ -1,0 +1,18 @@
+.newsletter {
+  height: 30vh;
+  background-color: darken($main-blue, 30%);
+
+  &-main {
+    height: 30vh;
+
+    @include media-breakpoint-down(md) {
+      min-height: 30vh;
+    }
+
+    h4 {
+      @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

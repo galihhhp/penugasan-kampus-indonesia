@@ -1,5 +1,12 @@
 import { useEffect } from "react";
-import { Hero, Recommendation, Feature, JobVacancy, Footer } from "components";
+import {
+  Hero,
+  Recommendation,
+  Feature,
+  JobVacancy,
+  Newsletter,
+  Footer,
+} from "components";
 
 const Homepage = () => {
   useEffect(() => (document.title = "Kampus Indonesia"));
@@ -10,6 +17,7 @@ const Homepage = () => {
       <Recommendation />
       <Feature />
       <JobVacancy />
+      <Newsletter />
       <Footer />
     </>
   );
