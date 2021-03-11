@@ -58,48 +58,46 @@ const Navbar = () => {
                 aria-expanded="false">
                 Fitur
               </p>
-              <div class="dropdown-menu navbar-feature-dropdown">
+              <div className="dropdown-menu navbar-feature-dropdown">
                 <p
-                  class="dropdown-item"
+                  className="dropdown-item"
                   onClick={() => history.push(ROUTES.RECOMMENDATION)}>
                   Kampus
                 </p>
                 <p
-                  class="dropdown-item"
+                  className="dropdown-item"
                   onClick={() => history.push(ROUTES.SCHOLARSHIP)}>
                   Beasiswa
                 </p>
                 <p
-                  class="dropdown-item"
+                  className="dropdown-item"
                   onClick={() => history.push(ROUTES.JOB_VACANCY)}>
                   Lowongan Kerja
                 </p>
                 <p
-                  class="dropdown-item"
+                  className="dropdown-item"
                   onClick={() => history.push(ROUTES.SEMINAR_WORKSHOP)}>
                   Seminar & Workshop
                 </p>
                 <p
-                  class="dropdown-item"
+                  className="dropdown-item"
                   onClick={() => history.push(ROUTES.COMPETITIONS)}>
                   Lomba
                 </p>
                 <p
-                  class="dropdown-item"
+                  className="dropdown-item"
                   onClick={() => history.push(ROUTES.UTBK)}>
                   UTBK
                 </p>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-dark mr-4" href="google.com">
+              <a className="nav-link text-dark mr-4" href="#footer">
                 Hubungi kami
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link text-dark mr-4" href="google.com">
-                Blog
-              </a>
+            <li className="nav-item" onClick={() => history.push(ROUTES.BLOG)}>
+              <p className="nav-link text-dark mr-4">Blog</p>
             </li>
           </ul>
 

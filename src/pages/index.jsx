@@ -5,6 +5,7 @@ import SeminarWorkshop from "./SeminarWorkshop";
 import Competition from "./Competition";
 import Scholarship from "./Scholarship";
 import Cart from "./Cart";
+import Blog from "./Blog";
 import NotFound from "./NotFound";
 
 export {
@@ -15,5 +16,6 @@ export {
   SeminarWorkshop,
   Competition,
   Scholarship,
+  Blog,
   Cart,
 };

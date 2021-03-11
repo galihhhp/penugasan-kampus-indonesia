@@ -5,7 +5,6 @@ import {
   Feature,
   JobVacancy,
   Newsletter,
-  Footer,
 } from "components";
 
 const Homepage = () => {
@@ -18,7 +17,6 @@ const Homepage = () => {
       <Feature />
       <JobVacancy />
       <Newsletter />
-      <Footer />
     </>
   );
 };

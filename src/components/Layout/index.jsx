@@ -1,4 +1,4 @@
-import { Navbar } from "components";
+import { Navbar, Footer } from "components";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Layout = ({ children }) => {
@@ -6,6 +6,7 @@ const Layout = ({ children }) => {
     <Router>
       <Navbar />
       {children}
+      <Footer />
     </Router>
   );
 };

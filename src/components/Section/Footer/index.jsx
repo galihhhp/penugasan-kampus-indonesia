@@ -5,7 +5,7 @@ const Footer = () => {
   const history = useHistory();
 
   return (
-    <div className="footer">
+    <div id="footer" className="footer">
       <div className="container d-flex pt-4 justify-content-around align-items-start text-white footer-content">
         <div className="w-100 mr-3 footer-content--left">
           <h1>Kampus Indonesia</h1>

@@ -1,0 +1,16 @@
+.blog-card {
+  cursor: pointer;
+
+  &:hover {
+    @include hover(darken(white, 10%), black);
+  }
+
+  &-main {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+
+    @include media-breakpoint-down(sm) {
+      width: 25rem;
+      margin-top: 10px;
+    }
+  }
+}

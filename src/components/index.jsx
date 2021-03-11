@@ -9,6 +9,7 @@ import FeatureCard from "./FeatureCard";
 import Modal from "./Modal";
 import CampusCardDetail from "./CampusCardDetail";
 import Poster from "./Poster";
+import BlogCard from "./BlogCard";
 import SeminarCard from "./SeminarCard";
 import SeminarForm from "./SeminarForm";
 import CartCard from "./CartCard";
@@ -33,6 +34,7 @@ export {
   CartCard,
   Layout,
   Input,
+  BlogCard,
   Registration,
   HeroCard,
   Poster,

@@ -7,6 +7,7 @@ import {
   Competition,
   Scholarship,
   Cart,
+  Blog,
   NotFound,
 } from "pages";
 
@@ -19,6 +20,7 @@ export const ROUTES = {
   SCHOLARSHIP: "/beasiswa",
   CART: "/keranjang",
   UTBK: "/utbk",
+  BLOG: "/blog",
 };
 
 export const Routes = () => {
@@ -30,6 +32,7 @@ export const Routes = () => {
     SEMINAR_WORKSHOP,
     SCHOLARSHIP,
     CART,
+    BLOG,
   } = ROUTES;
 
   return (
@@ -41,6 +44,7 @@ export const Routes = () => {
       <Route path={COMPETITIONS} component={Competition} exact />
       <Route path={SCHOLARSHIP} component={Scholarship} exact />
       <Route path={CART} component={Cart} exact />
+      <Route path={BLOG} component={Blog} exact />
       <Route component={NotFound} />
     </Switch>
   );

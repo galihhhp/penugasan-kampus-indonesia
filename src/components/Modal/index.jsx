@@ -11,7 +11,7 @@ const Modal = ({ type, data }) => {
     <div
       className="modal fade"
       id="ModalCenter"
-      tabindex="-1"
+      tabIndex="1"
       role="dialog"
       aria-labelledby="ModalCenterTitle"
       aria-hidden="true">
