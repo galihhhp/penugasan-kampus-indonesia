@@ -7,6 +7,7 @@ import {
   Competition,
   Scholarship,
   Cart,
+  BlogDetail,
   Blog,
   NotFound,
 } from "pages";
@@ -21,6 +22,7 @@ export const ROUTES = {
   CART: "/keranjang",
   UTBK: "/utbk",
   BLOG: "/blog",
+  BLOG_DETAIL: "/blog/:id",
 };
 
 export const Routes = () => {
@@ -33,6 +35,7 @@ export const Routes = () => {
     SCHOLARSHIP,
     CART,
     BLOG,
+    BLOG_DETAIL,
   } = ROUTES;
 
   return (
@@ -45,6 +48,7 @@ export const Routes = () => {
       <Route path={SCHOLARSHIP} component={Scholarship} exact />
       <Route path={CART} component={Cart} exact />
       <Route path={BLOG} component={Blog} exact />
+      <Route path={BLOG_DETAIL} component={BlogDetail} exact />
       <Route component={NotFound} />
     </Switch>
   );
