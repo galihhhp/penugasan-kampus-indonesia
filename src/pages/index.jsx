@@ -5,10 +5,12 @@ import SeminarWorkshop from "./SeminarWorkshop";
 import Competition from "./Competition";
 import Scholarship from "./Scholarship";
 import Cart from "./Cart";
+import NotFound from "./NotFound";
 
 export {
   Homepage,
   RecommendationPage,
+  NotFound,
   JobVacancy,
   SeminarWorkshop,
   Competition,

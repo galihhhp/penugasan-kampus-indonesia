@@ -44,10 +44,7 @@ const Feature = () => {
       />
     </div>,
     <div className="item" data-value="6">
-      <FeatureCard
-        title="UTBK"
-        onClick={() => history.push(ROUTES.RECOMMENDATION)}
-      />
+      <FeatureCard title="UTBK" onClick={() => history.push(ROUTES.UTBK)} />
     </div>,
   ];
 
