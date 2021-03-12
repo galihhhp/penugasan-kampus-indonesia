@@ -32,7 +32,8 @@ const Button = ({
         className
       )}
       disabled={disabled}
-      onClick={onClick}>
+      onClick={onClick}
+    >
       {label && label}
     </button>
   );

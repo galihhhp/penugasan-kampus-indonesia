@@ -10,7 +10,8 @@ const Partner = () => {
         {partner.map((partner) => (
           <div
             key={partner.id}
-            className="col m-1 d-flex justify-content-center align-items-center">
+            className="col m-1 d-flex justify-content-center align-items-center"
+          >
             <img src={partner.logo} alt="logo" />
           </div>
         ))}

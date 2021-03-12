@@ -13,6 +13,7 @@ import BlogCard from "./BlogCard";
 import SeminarCard from "./SeminarCard";
 import SeminarForm from "./SeminarForm";
 import CartCard from "./CartCard";
+import CompetitionCard from "./CompetitionCard";
 import Registration from "./Registration";
 import Alert from "./Alert";
 import Layout from "./Layout";
@@ -36,6 +37,7 @@ export {
   Layout,
   Input,
   BlogCard,
+  CompetitionCard,
   Registration,
   HeroCard,
   Poster,

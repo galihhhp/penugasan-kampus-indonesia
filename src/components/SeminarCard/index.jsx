@@ -25,8 +25,9 @@ const SeminarCard = ({ seminar }) => {
         className="row p-2 mt-2 seminar-card__poster__button"
         onClick={() => {
           setIsModalOpen(true);
-          setModalType("poster");
-        }}>
+          setModalType("seminarPoster");
+        }}
+      >
         <p className="col m-0 text-center">Lihat poster</p>
       </div>
       <div
@@ -36,7 +37,8 @@ const SeminarCard = ({ seminar }) => {
         onClick={() => {
           setIsModalOpen(true);
           setModalType("seminar");
-        }}>
+        }}
+      >
         <p className="col m-0 text-center text-white">Daftar</p>
       </div>
     </div>

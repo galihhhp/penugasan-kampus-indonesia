@@ -9,7 +9,8 @@ const Alert = ({ label, type, className }) => {
         { [`alert-${type}`]: type },
         className
       )}
-      role="alert">
+      role="alert"
+    >
       {label && label}
     </div>
   );

@@ -33,12 +33,14 @@ const Navbar = () => {
           data-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <p
           className="navbar-brand font-weight-bold d-flex flex-column"
-          onClick={() => history.push(ROUTES.HOMEPAGE)}>
+          onClick={() => history.push(ROUTES.HOMEPAGE)}
+        >
           Kampus <span className="ml-3">Indonesia</span>
         </p>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -46,7 +48,8 @@ const Navbar = () => {
             <li className="nav-item">
               <p
                 className="nav-link text-dark mr-4"
-                onClick={() => history.push(ROUTES.HOMEPAGE)}>
+                onClick={() => history.push(ROUTES.HOMEPAGE)}
+              >
                 Beranda
               </p>
             </li>
@@ -55,38 +58,45 @@ const Navbar = () => {
                 className="nav-link text-dark mr-4 dropdown-toggle"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false">
+                aria-expanded="false"
+              >
                 Fitur
               </p>
               <div className="dropdown-menu navbar-feature-dropdown">
                 <p
                   className="dropdown-item"
-                  onClick={() => history.push(ROUTES.RECOMMENDATION)}>
+                  onClick={() => history.push(ROUTES.RECOMMENDATION)}
+                >
                   Kampus
                 </p>
                 <p
                   className="dropdown-item"
-                  onClick={() => history.push(ROUTES.SCHOLARSHIP)}>
+                  onClick={() => history.push(ROUTES.SCHOLARSHIP)}
+                >
                   Beasiswa
                 </p>
                 <p
                   className="dropdown-item"
-                  onClick={() => history.push(ROUTES.JOB_VACANCY)}>
+                  onClick={() => history.push(ROUTES.JOB_VACANCY)}
+                >
                   Lowongan Kerja
                 </p>
                 <p
                   className="dropdown-item"
-                  onClick={() => history.push(ROUTES.SEMINAR_WORKSHOP)}>
+                  onClick={() => history.push(ROUTES.SEMINAR_WORKSHOP)}
+                >
                   Seminar & Workshop
                 </p>
                 <p
                   className="dropdown-item"
-                  onClick={() => history.push(ROUTES.COMPETITIONS)}>
+                  onClick={() => history.push(ROUTES.COMPETITIONS)}
+                >
                   Lomba
                 </p>
                 <p
                   className="dropdown-item"
-                  onClick={() => history.push(ROUTES.UTBK)}>
+                  onClick={() => history.push(ROUTES.UTBK)}
+                >
                   UTBK
                 </p>
               </div>

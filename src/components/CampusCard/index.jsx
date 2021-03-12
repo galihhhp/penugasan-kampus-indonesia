@@ -17,7 +17,8 @@ const CampusCard = ({ className, blue, white, campus }) => {
           { "campus-card--white": white },
           { "campus-card--blue": blue },
           className
-        )}>
+        )}
+      >
         <div className="d-flex mb-3 campus-card__img">
           <img src={logo} alt="cap" />
         </div>
@@ -39,7 +40,8 @@ const CampusCard = ({ className, blue, white, campus }) => {
             { "campus-card__button--white": white },
             { "campus-card__button--blue": blue },
             className
-          )}>
+          )}
+        >
           Lihat detail
         </p>
       </div>

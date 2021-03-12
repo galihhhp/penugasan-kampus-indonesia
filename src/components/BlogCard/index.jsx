@@ -18,7 +18,8 @@ const BlogCard = ({ blog, type, className }) => {
           pathname: `${ROUTES.BLOG}/${id}`,
           state: blog,
         })
-      }>
+      }
+    >
       <div className={classNames({ [`blog-card-${type}`]: type }, className)}>
         <div className="row">
           <div className="col ml-2">
