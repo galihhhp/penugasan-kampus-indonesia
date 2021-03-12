@@ -3,6 +3,7 @@ import {
   Hero,
   Recommendation,
   Feature,
+  Partner,
   JobVacancy,
   Newsletter,
 } from "components";
@@ -15,6 +16,7 @@ const Homepage = () => {
       <Hero />
       <Recommendation />
       <Feature />
+      <Partner />
       <JobVacancy />
       <Newsletter />
     </>

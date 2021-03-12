@@ -1,7 +1,11 @@
 import { Button } from "components";
+import { ROUTES } from "configs/routes";
+import { useHistory } from "react-router-dom";
 import jobVacancyIcon from "assets/job.png";
 
 const JobVacancy = () => {
+  const history = useHistory();
+
   return (
     <div className="job-vacancy d-flex text-white">
       <div className="container d-flex justify-content-center align-items-center">
@@ -16,7 +20,12 @@ const JobVacancy = () => {
             Temukan pekerjaan impian anda disini!
           </p>
           <div className="d-flex">
-            <Button label="Lowongan Pekerjaan" size="lg" white />
+            <Button
+              label="Lowongan Pekerjaan"
+              size="lg"
+              white
+              onClick={() => history.push(ROUTES.JOB_VACANCY)}
+            />
           </div>
         </div>
       </div>
