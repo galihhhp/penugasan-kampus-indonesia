@@ -11,10 +11,7 @@ const JobVacancy = () => {
           <h4 className="text-center">
             Dapatkan pekerjaan sesuai dengan impian kamu
           </h4>
-          <Search
-            onChange={(e) => setKeyword(e.target.value)}
-            onClick={alert(keyword)}
-          />
+          <Search onChange={(e) => setKeyword(e.target.value)} />
         </div>
         <div className="row mt-3 py-3 bg-light h-100 justify-content-center align-items-center">
           <h3 className="text-center">
