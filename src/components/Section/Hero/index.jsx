@@ -11,7 +11,9 @@ const Hero = () => {
         Kami menyediakan segala informasi tentang dunia perkuliahan yang bisa
         anda akses melalui aplikasi Kampus Indonesia
       </p>
-      <Search />
+      <div className="mt-5 w-100">
+        <Search />
+      </div>
       <HeroCard />
     </div>
   );
